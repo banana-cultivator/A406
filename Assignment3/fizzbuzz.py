@@ -9,3 +9,12 @@ def fizz_buzz(length):
         - if the index is a multiple of both three and five, the list element will be 'FizzBuzz'
         - otherwise, the list element will be a string of the value of the index
     '''
+    
+    return   [
+            "FizzBuzz" * (i % 5 == 0 and i % 3 == 0)
+            or "Buzz" * (i % 5 == 0)
+            or "Fizz" * (i % 3 == 0)
+            or str(i)
+            for i in range(length)
+        ]
+
